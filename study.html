@@ -4,24 +4,71 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        p
+        {
+            color:green;
+            border : 1px solid blue;
+        }
+        h1, h2
+        {
+            text-align:center;
+            color:purple;
+            background-color:gray;
+        }
+        #palevioletred
+        {
+            color:palevioletred;
+        }
+        .skyblue
+        {
+            color:skyblue;
+        }
+        ol li
+        {
+            color:green;
+        }
+    </style>
     <title>스터디모집</title>
 </head>
 <body>
     <h1>스터디원 모집</h1>
     <h2>영어 공부할 친구들 모여라!</h2>
-    <p>학교 끝나고 공부할 학생을 모집합니다. 시간은 4시입니다.<br>평소 스터디를 하고 싶었던 분들
-    많이 지원해주세요.</p>
+    <p id="palevioletred">학교 끝나고 공부할 학생을 모집합니다. 시간은 4시입니다.<br></p>
+    <p class="skyblue">평소 스터디를 하고 싶었던 분들 많이 지원해주세요.</p>
     <ul>
         <li><b>모집 기간 : </b> 6/8 ~ 6/20</li>
         <li><b>지원 자격 : </b> 누구나</li>
-        <li><b>지원 방법 : </b> 아래 번호로 문자</li>
+        <li><b>지원 방법 : </b> 아래 설문 작성</li>
     </ul>
-    <h3>혜택</h3>
+    <h3 class="skyblue">혜택</h3>
     <ol>
         <li>스터디 교실 제공</li>
         <li>간식 제공</li>
         <li>교재 제공</li>
     </ol>
     <img src="https://img.huffingtonpost.com/asset/5d71f0d4250000e2130670fd.jpeg?ops=scalefit_630_noupscale">
+    <form>
+        이름 : <input type="text" placeholder="이름을 입력해주세요."><br><br>
+        주소 : <input type="text" placeholder="여의도"><br><br>
+        학교 : <input type="text" placeholder="여의도중학교"><br><br>
+        전화번호 : <input type="text" placeholder="010-1234-5678"><br><br>
+        성별 : <input type="radio" name="gender" value="m">남
+        <input type="radio" name="gender" value="w">여<br><br>
+        학년 : <input type="radio" name="grade" value="1">1학년
+        <input type="radio" name="grade" value="2">2학년
+        <input type="radio" name="grade" value="3">3학년<br><br>
+        성적 :
+        <select name="study">
+            <option>최상</option>
+            <option>상</option>
+            <option>중</option>
+            <option>하</option>
+            <option>최하</option>
+        </select><br><br>
+        기타 요청사항<br>
+        <textarea rows="15" cols="30" placeholder="요청사항을 입력해주세요."></textarea><br><br>
+        <input type="submit" name="submit" value="전송"><br><br>
+    </form>
 </body>
 </html>

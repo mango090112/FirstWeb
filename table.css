@@ -1,0 +1,16 @@
+table, th, td
+{
+    border:1px solid black;
+}
+tr th
+{
+    background-color:gold;
+}
+#first
+{
+    color:aqua
+}
+.yellowgreen
+{
+    color:yellowgreen
+}
