@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <script src="javascript2.js"></script>
+    <title>javascript</title>
+</head>
+<body>
+    <input type="button" value="Hello world" onclick="alert('Hello world')"/>
+    <br>
+    <input type="button" value="Hello world" id="hw"/>
+    <br>
+    <input type="button" value="현재시각" id="time"/>
+    <script type="text/javascript">
+        var hw = document.getElementById('hw');
+        hw.addEventListener('click', function(){
+            alert('Hello world');
+        });
+        var time = document.getElementById('time');
+        time.addEventListener('click', function(){
+            var date = new Date();
+            alert(date);
+        });
+    </script>
+    <br>
+    <input type="button" value="다른파일" id="other"/>
+    <script type="text/javascript" src="javascript.js"></script>
+    <br>
+    <input type="button" value="head에서부르기" id="head"/>
+</body>
+</html>
